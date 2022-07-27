@@ -1,6 +1,7 @@
 export type IDigimon = {
+    id: number;
     name: string;
-    image: string;
-    description: string;
+    img: string;
+    level: string;
     points: number;
 }
