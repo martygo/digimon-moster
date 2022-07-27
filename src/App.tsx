@@ -59,6 +59,7 @@ function App() {
 				{digimonList.map((digimon, key) => (
 					<DigimonCard
 						id={key}
+						key={key}
 						name={digimon.name}
 						img={digimon.img}
 						level={digimon.level}
