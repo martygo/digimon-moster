@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import http from "../services/http";
 import { IDigimon } from "types/IDigimon";
 import { randomPoint } from "../util/randomPoint";
+import { getUser } from "../util/storage";
 import { DigimonCard } from "../components/DigimonCard";
 
 export function DigimonList() {
@@ -10,6 +11,8 @@ export function DigimonList() {
 	const [limit, setLimit] = useState<number>(5);
 	const [limitAttempts, setLimitAttempts] = useState<number>(0);
 	const [loading, setLoading] = useState<boolean>(true);
+
+	const user = getUser("username");
 
 	useEffect(() => {
 		const getDigimon = async () => {
@@ -43,8 +46,8 @@ export function DigimonList() {
 	};
 
 	return (
-		<div className="container">
-			<h4 className="text-right m-bottom">Martins Gouveia</h4>
+		<div className="container-fluid">
+			<h4 className="text-right text-white m-bottom">{user}</h4>
 
 			<div className="card-content">
 				{!!loading && <h4 className="text-center">Carregando....</h4>}
