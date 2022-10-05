@@ -2,8 +2,6 @@
   Digimon Monster
 </h1>
 
-Ver site: [https://digimon-moster.vercel.app](https://digimon-moster.vercel.app/)
-
 <p align="center">
   Este é um projecto que lista todos os monstros do ``Digimon``. Foi desenvolvido usando React + Typescript + Bootstrap.
   A <b>digimon-api.vercel.app/api"</b> é a api utilizada no projecto que pode ser encontrada em "https://github.com/public-apis/public-apis".
